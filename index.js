@@ -6,8 +6,16 @@ app.get('/', (req, res) => {
     res.send('Hello, node and exprees world!');
 });
 
+// user array make
+const users = [
+    {id: 1, name: 'John Doe', email: 'john@example.com'},
+    {id: 2, name: 'John Doe', email: 'john@example.com'},
+    {id: 3, name: 'John Doe', email: 'john@example.com'},
+    {id: 4, name: 'John Doe', email: 'john@example.com'},
+];
+
 app.get('/users', (req, res) => {
-    res.send('users are waking up');
+    res.send(users);
 });
 
 app.get('/products', (req, res) => {
