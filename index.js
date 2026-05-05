@@ -22,6 +22,12 @@ app.get('/products', (req, res) => {
     res.send('Products are jumping up');
 });
 
+app.post('/users', (req, res) => {
+    console.log('Post method is working');
+    
+    res.send("Post method is working");
+});
+
 app.listen(port, () => {
     console.log('Server is running on port', port);
 });
