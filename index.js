@@ -10,6 +10,10 @@ app.get('/users', (req, res) => {
     res.send('users are waking up');
 });
 
+app.get('/products', (req, res) => {
+    res.send('Products are jumping up');
+});
+
 app.listen(port, () => {
     console.log('Server is running on port', port);
 });
